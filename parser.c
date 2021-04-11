@@ -280,7 +280,7 @@ static void node_out(FILE* file, XMLNODE* node, int indent, int times){
     for(int i = 0; i< node->children.size; i++){
         XMLNODE* child = node->children.data[i];
         if(times > 0)
-            fprintf(file, "%0*s", indent * times, " ");
+            fprintf(file, "%*s", indent * times, " ");
         fprintf(file,"<%s", child->tag);
         if (child->children.size == 0 && !child->value)
             fprintf(file, " />\n");
@@ -292,7 +292,7 @@ static void node_out(FILE* file, XMLNODE* node, int indent, int times){
                 fprintf(file, "\n");
                 node_out(file, child, indent, times + 1);
                 if (times > 0)
-                    fprintf(file, "%0*s", indent * times, " ");
+                    fprintf(file, "%*s", indent * times, " ");
                 fprintf(file, "</%s>\n", child->tag);
             }
         }
