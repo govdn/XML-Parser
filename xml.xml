@@ -1,0 +1,18 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<planes_for_sale>
+   <ad>
+      <year>1978</year>
+      <make> 43 </make>
+      <model> Skyhawk </model>
+      <color> Light blue and white </color>
+      <description> New paint, nearly new interior,
+            685 hours SMOH, full IFR King avionics </description>
+      <price> 23495 </price>
+      <seller> Skyway Aircraft </seller>
+      <location>
+         <city> Rapid City, </city>
+         <state> South Dakota </state>
+      </location>
+      <previous>[ 1 2 3 4 5]</previous>
+   </ad>
+</planes_for_sale>
