@@ -202,7 +202,7 @@ char* GET(char* query, char* file){
         int i = 0;
         int index = 0;
         while (query[index] !='\0'){
-            int i= 0;
+            i= 0;
             while(query[index] !='.' && query[index] !='\0')
                 buff[i++] = query[index++]; 
             buff[i] = '\0';
@@ -248,7 +248,7 @@ char* SET(char* query, char* newvalue, char* file){
         int i = 0;
         int index = 0;
         while (query[index] !='\0'){
-            int i= 0;
+            i= 0;
             while(query[index] !='.' && query[index] !='\0')
                 buff[i++] = query[index++]; 
             buff[i] = '\0';
@@ -308,4 +308,5 @@ int XMLDOC_write(XMLDOC* doc, const char* path, int indent){
     fprintf(file, "%s\n", header);
     node_out(file, doc->root, indent, 0);
     fclose(file);
+    return TRUE;
 }
